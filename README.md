@@ -14,6 +14,48 @@ Simply visit the [Lovable Project](https://lovable.dev/projects/e2956f89-34f0-4e
 
 Changes made via Lovable will be committed automatically to this repo.
 
+## Basically I have used this prompt to do so:
+
+create a comprehensive RAG-based AI Career Assistant & AI Resume Matcher app. Here's what You've to build:
+
+🎨 Beautiful Design System
+Modern blue-to-teal gradient theme matching your existing app
+Custom design tokens with elegant shadows and smooth animations
+Glass effects and sophisticated styling throughout
+🤖 RAG-Powered AI Assistant Features
+1. Intelligent Chat Interface
+Real-time conversation with typing indicators
+Beautiful message bubbles with timestamps
+Voice recording button (ready for future implementation)
+2. Smart Suggested Questions
+6 categories: Resume Improvement, Career Growth, Interview Prep, Industry Insights, Learning & Development, Networking
+18+ pre-built questions to help users get started
+Contextual recommendations based on career topics
+3. RAG Knowledge Base Simulation
+Industry best practices for resume writing
+Current market trends and skill requirements
+Interview preparation techniques
+Career development strategies
+Technical skill recommendations
+4. Enhanced Navigation
+Sleek navigation bar connecting both tools
+Mobile-responsive design
+Active route highlighting
+🚀 Key Features
+RAG-Enhanced Responses: The AI provides detailed, contextual advice based on a comprehensive knowledge base
+Real-time Analysis: Instant career insights and recommendations
+Industry Expertise: Curated best practices from career professionals
+Personalized Guidance: Tailored advice for different career stages and roles
+Beautiful Animations: Smooth transitions and engaging interactions
+📱 User Experience
+Users can seamlessly switch between resume analysis and AI career guidance
+The AI assistant complements your resume matcher perfectly
+Professional, modern interface that builds trust
+Mobile-optimized for use anywhere
+The RAG system is currently simulated with intelligent keyword matching and comprehensive response templates. In a real implementation, it should connect to actual RAG infrastructure with vector databases, embeddings, and live data sources.
+
+So that Users can now get personalized career advice, resume optimization tips, interview strategies, and industry insights - making this app a complete career development platform!
+
 **Use your preferred IDE**
 
 If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
