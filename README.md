@@ -1,115 +1,139 @@
-# Welcome to your Lovable project
+## 🧠 AI Career Assistant & AI Resume Matcher
 
-## Project info
+An advanced **RAG-based (Retrieval-Augmented Generation)** web app designed to help users get **personalized career advice, resume optimization tips, interview strategies, and industry insights** — making this platform a **complete career development solution**.
 
-**URL**: https://lovable.dev/projects/e2956f89-34f0-4e27-b9bb-519680c71659
+---
 
-## How can I edit this code?
+### 🎯 **Project Overview**
 
-There are several ways of editing your application.
+This project combines the power of **AI and NLP** to assist users in their career journey.
+It includes two main modules:
 
-**Use Lovable**
+1. **AI Career Assistant**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/e2956f89-34f0-4e27-b9bb-519680c71659) and start prompting.
+   * Chat with an intelligent AI that provides context-aware, career-focused responses.
+   * Get advice on resume building, career growth, interview prep, industry insights, and networking.
 
-Changes made via Lovable will be committed automatically to this repo.
+2. **AI Resume Matcher**
 
-## Basically I have used this prompt to do so:
+   * Analyze and match resumes with job descriptions.
+   * Identify missing skills, strengths, and areas for improvement.
 
-create a comprehensive RAG-based AI Career Assistant & AI Resume Matcher app. Here's what You've to build:
+The **RAG (Retrieval-Augmented Generation)** component enhances the AI’s responses using a simulated knowledge base built with embeddings, keyword matching, and context-driven templates.
 
-🎨 Beautiful Design System
-Modern blue-to-teal gradient theme matching your existing app
-Custom design tokens with elegant shadows and smooth animations
-Glass effects and sophisticated styling throughout
-🤖 RAG-Powered AI Assistant Features
-1. Intelligent Chat Interface
-Real-time conversation with typing indicators
-Beautiful message bubbles with timestamps
-Voice recording button (ready for future implementation)
-2. Smart Suggested Questions
-6 categories: Resume Improvement, Career Growth, Interview Prep, Industry Insights, Learning & Development, Networking
-18+ pre-built questions to help users get started
-Contextual recommendations based on career topics
-3. RAG Knowledge Base Simulation
-Industry best practices for resume writing
-Current market trends and skill requirements
-Interview preparation techniques
-Career development strategies
-Technical skill recommendations
-4. Enhanced Navigation
-Sleek navigation bar connecting both tools
-Mobile-responsive design
-Active route highlighting
-🚀 Key Features
-RAG-Enhanced Responses: The AI provides detailed, contextual advice based on a comprehensive knowledge base
-Real-time Analysis: Instant career insights and recommendations
-Industry Expertise: Curated best practices from career professionals
-Personalized Guidance: Tailored advice for different career stages and roles
-Beautiful Animations: Smooth transitions and engaging interactions
-📱 User Experience
-Users can seamlessly switch between resume analysis and AI career guidance
-The AI assistant complements your resume matcher perfectly
-Professional, modern interface that builds trust
-Mobile-optimized for use anywhere
-The RAG system is currently simulated with intelligent keyword matching and comprehensive response templates. In a real implementation, it should connect to actual RAG infrastructure with vector databases, embeddings, and live data sources.
+---
 
-So that Users can now get personalized career advice, resume optimization tips, interview strategies, and industry insights - making this app a complete career development platform!
+### ✨ **Features**
 
-**Use your preferred IDE**
+#### 🤖 Intelligent Chat Interface
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+* Real-time chat with typing indicators
+* Beautiful chat bubbles with timestamps
+* Voice recording button (future-ready)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+#### 💬 Smart Suggested Questions
 
-Follow these steps:
+* 6 categories: Resume Improvement, Career Growth, Interview Prep, Industry Insights, Learning & Development, Networking
+* 18+ pre-built questions to get users started
+* Dynamic suggestions based on context
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+#### 🧩 RAG Knowledge Base Simulation
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* Industry best practices for resume writing
+* Career growth and skill development insights
+* Interview preparation techniques
+* Latest market trends and job requirements
 
-# Step 3: Install the necessary dependencies.
-npm i
+#### 🧭 Enhanced Navigation & UI
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+* Modern blue-to-teal gradient theme
+* Glassmorphic effects with elegant shadows
+* Smooth animations and responsive design
+* Mobile-optimized and user-friendly interface
+
+#### 🚀 Key Highlights
+
+* RAG-enhanced contextual responses
+* Resume analysis and skill recommendations
+* Personalized career guidance
+* Real-time, interactive experience
+
+---
+
+### 🧩 **Tech Stack**
+
+**Frontend:** React (with TailwindCSS, Framer Motion, ShadCN UI)
+**Backend:** FastAPI, LangChain, Transformers, ChromaDB
+**AI/NLP:** Sentence Transformers, FAISS, SpaCy, NLTK
+**Resume Parsing:** pdfplumber, docx2txt
+**Database:** Simulated Vector Store (can connect to FAISS or Chroma)
+
+---
+
+### ⚙️ **Installation & Setup**
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://lovable.dev/projects/e2956f89-34f0-4e27-b9bb-519680c71659
+cd ai-career-assistant
 ```
 
-**Edit a file directly in GitHub**
+#### 2. Create Virtual Environment
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+```bash
+python -m venv venv
+source venv/bin/activate  # for macOS/Linux
+venv\Scripts\activate     # for Windows
+```
 
-**Use GitHub Codespaces**
+#### 3. Install Dependencies
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+pip install -r requirements.txt
+```
 
-## What technologies are used for this project?
+#### 4. Run the Backend Server
 
-This project is built with:
+```bash
+uvicorn main:app --reload
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+#### 5. Run the Frontend (React)
 
-## How can I deploy this project?
+If you are working locally, navigate to the React app folder and run:
 
-Simply open [Lovable](https://lovable.dev/projects/e2956f89-34f0-4e27-b9bb-519680c71659) and click on Share -> Publish.
+```bash
+npm install
+npm start
+```
 
-## Can I connect a custom domain to my Lovable project?
+---
+### 🧠 **Simulated RAG Logic**
 
-Yes, you can!
+Currently, the RAG system is simulated using intelligent **keyword matching and response templates**.
+For a real deployment:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+* Integrate **vector databases (Chroma / FAISS)**
+* Use **OpenAI, Hugging Face, or Llama models** for dynamic embeddings
+* Implement **context-aware retrieval pipelines**
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+### 💡 **Future Enhancements**
+
+* Voice-enabled conversations
+* Job description to resume ranking system
+* Real-time AI feedback on resume uploads
+* Integration with live labor market APIs
+
+---
+
+### 👩‍💻 **Developer Notes**
+
+If you wish to work locally, you can clone this repo, make changes in your IDE, and push updates — your changes will be automatically reflected in **Lovable**.
+
+URL: [https://lovable.dev/projects/e2956f89-34f0-4e27-b9bb-519680c71659](https://lovable.dev/projects/e2956f89-34f0-4e27-b9bb-519680c71659)
+
+
+
